@@ -673,7 +673,6 @@ PRODUCT_PACKAGES += \
     libsymphony-cpu \
     libsystem_health_mon \
     libtime_genoff \
-    libtinyxml \
     libtinyxml2_1 \
     libtrustedapploader \
     libtzdrmgenprov \
