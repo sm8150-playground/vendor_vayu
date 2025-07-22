@@ -777,7 +777,6 @@ PRODUCT_PACKAGES += \
     misound_res_headphone \
     misound_res_spk \
     tas25xx_TI_0 \
-    com.qualcomm.qti.ant@1.0 \
     libmmosal \
     com.qualcomm.qti.dpm.api@1.0 \
     fm_helium \
