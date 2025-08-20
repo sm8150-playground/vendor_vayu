@@ -9138,31 +9138,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhta",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhta.so",
-            ],
-            shared_libs: [
-                "libcdsprpc",
-                "liblog",
-                "libm",
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libhta_hexagon_runtime",
     owner: "xiaomi",
     strip: {
@@ -9176,7 +9151,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcdsprpc",
-                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -13202,6 +13176,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
+                "libbase",
                 "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libc++",
                 "libc",
@@ -17278,6 +17253,7 @@ cc_prebuilt_binary {
                 "libcutils",
                 "libfmq",
                 "libui",
+                "libcrypto",
                 "android.hardware.neuralnetworks@1.0",
                 "android.hardware.neuralnetworks@1.1",
                 "android.hardware.neuralnetworks@1.2",

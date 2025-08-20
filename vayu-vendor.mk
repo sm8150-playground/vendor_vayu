@@ -553,7 +553,6 @@ PRODUCT_PACKAGES += \
     libgps.utils \
     libhdr_tm \
     libhexagon_nn_stub \
-    libhta \
     libhta_hexagon_runtime \
     libidl \
     libizat_client_api \
