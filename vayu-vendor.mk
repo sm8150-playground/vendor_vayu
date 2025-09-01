@@ -277,6 +277,7 @@ PRODUCT_PACKAGES += \
     libq3dtools_adreno \
     libq3dtools_esx \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
+    vendor.qti.hardware.bluetooth_audio@2.1-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vulkan.adreno \
     libC2D2 \
@@ -323,7 +324,6 @@ PRODUCT_PACKAGES += \
     audio.primary.vayu \
     sound_trigger.primary.msmnile \
     vendor.qti.hardware.audiohalext@1.0-impl \
-    vendor.qti.hardware.bluetooth_audio@2.1-impl \
     liba2dpoffload_vayu \
     libacdb-fts \
     libacdbloader \
