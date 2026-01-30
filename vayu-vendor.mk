@@ -855,6 +855,7 @@ PRODUCT_PACKAGES += \
     libfm-hci \
     libimscamera_jni \
     libimsmedia_jni \
+    libmmparser_lite \
     libmmrtpdecoder \
     libmmrtpencoder \
     libwfdavenhancements \

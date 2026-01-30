@@ -17435,6 +17435,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmmparser_lite",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmmparser_lite.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libmmosal",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmmrtpdecoder",
     owner: "xiaomi",
     strip: {
@@ -17750,7 +17778,6 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/libwfdmmsrc_system.so",
             ],
             shared_libs: [
-                "libgui_shim",
                 "libbinder",
                 "libmmosal",
                 "liblog",
@@ -17798,7 +17825,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libinput_shim",
-                "libbinder_shim",
                 "libandroid_runtime",
                 "libui",
                 "libinput",
